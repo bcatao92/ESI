@@ -71,6 +71,7 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
   gem 'cucumber-rails', require: false
+  gem 'coveralls_reborn', require: false
   # database_cleaner is not mandatory, but highly recommended
   gem 'database_cleaner'
 end
