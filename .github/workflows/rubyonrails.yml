@@ -44,7 +44,7 @@ jobs:
           DISABLE_SPRING: 1
         run: |
           sudo apt install -yqq libpq-dev
-          gem install bundler
+          sudo gem install bundler
           bundle exec rails db:prepare
           bundle exec rake test
       # Add or replace test runners here
