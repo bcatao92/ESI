@@ -10,6 +10,8 @@ César Billalta Yamasato, n°USP: 12542992\
 Kennedy Rohab Menezes da Silva, nºUSP: 12683395\
 Lucas Panta de Moura, nºUSP: 12608650\
 
+---
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
