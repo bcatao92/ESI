@@ -8,7 +8,7 @@ Link para o app no Heroku: https://dashboard.heroku.com/apps/agendeach
 Bruno Alves Catão Silva, n°USP: 7553278\
 César Billalta Yamasato, n°USP: 12542992\
 Kennedy Rohab Menezes da Silva, nºUSP: 12683395\
-Lucas Panta de Moura, nºUSP: 12608650\
+Lucas Panta de Moura, nºUSP: 12608650
 
 ---
 
