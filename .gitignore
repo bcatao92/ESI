@@ -12,6 +12,10 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
+/myapp/log/*
+/myapp/tmp/*
+!/myapp/log/.keep
+!/myapp/tmp/.keep
 
 # Ignore pidfiles, but keep the directory.
 /tmp/pids/*
