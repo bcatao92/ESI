@@ -25,9 +25,24 @@ jobs:
         uses: actions/setup-ruby@v1
         with:
           ruby-version: 2.6.x
+          
       - uses: borales/actions-yarn@v2.0.0
         with:
           cmd: install
+          
+      - name: Setup database
+        env:
+          PG_DATABASE: postgres
+          PG_HOST: localhost
+          PG_USER: postgres
+          PG_PASSWORD: password
+          RAILS_ENV: test
+          WITH_COVERAGE: true
+          DISABLE_SPRING: 1
+        run: |
+          bundle exec rails db:prepare
+          bundle exec rake test
+
       - name: Build and run tests
         env:
           DATABASE_URL: postgres://postgres:@localhost:5432/test
