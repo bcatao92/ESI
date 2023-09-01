@@ -34,6 +34,11 @@ jobs:
         with:
           bundler-cache: true
           ruby-version: 3.2.2
+
+      - name: Install Dependencies
+        run: |
+          sudo apt install -yqq libpq-dev
+          gem install bundler
           
       - name: Install Gems
         run: |
