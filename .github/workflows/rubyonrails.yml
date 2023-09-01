@@ -34,11 +34,6 @@ jobs:
         with:
           bundler-cache: true
           ruby-version: 3.2.2
-
-      - name: Install Dependencies
-        run: |
-          sudo apt install -yqq libpq-dev
-          gem install bundler
         
       # Add or replace database setup steps here
       - name: Set up database schema
@@ -51,6 +46,8 @@ jobs:
           WITH_COVERAGE: true
           DISABLE_SPRING: 1
         run: |
+          sudo apt install -yqq libpq-dev
+          gem install bundler
           bundle exec rails db:prepare
           bundle exec rake test
       # Add or replace test runners here
